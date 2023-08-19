@@ -1,4 +1,6 @@
+
 document.addEventListener('DOMContentLoaded', () => {
+    
     const cells = document.querySelectorAll('[data-cell]');
     const message = document.getElementById('message');
     const resetButton = document.getElementById('reset-button');
@@ -12,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!gameOver && board[index] === '') {
                 board[index] = currentPlayer;
                 cell.innerText = currentPlayer;
+                currentPlayer = 'Carlos' ;
                 checkGameResult();
-                currentPlayer = currentPlayer === 'X' ? 'Carlos' : 'X';
 
                 if (currentPlayer === 'Carlos') {
                     setTimeout(makeAiMove, 500);
@@ -72,8 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const bestMove = monteCarloSimulation(board, 'Carlos', 1000); // Simulate 1000 games
             board[bestMove] = 'Carlos';
             cells[bestMove].innerText = 'O';
-            checkGameResult();
             currentPlayer = 'X';
+            checkGameResult();
         }
     }
 
