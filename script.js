@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const randomMove = availableMoves[Math.floor(Math.random() * availableMoves.length)];
                 simBoard[randomMove] = simPlayer;
-                simPlayer = 'Carlos';
+                simPlayer = simPlayer === 'X' ? 'Carlos' : 'X';
             }
 
             const simResult = checkGameResultForSimulation(simBoard);
