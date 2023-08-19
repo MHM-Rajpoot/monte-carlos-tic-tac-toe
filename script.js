@@ -1,13 +1,33 @@
-
 document.addEventListener('DOMContentLoaded', () => {
-    
     const cells = document.querySelectorAll('[data-cell]');
     const message = document.getElementById('message');
     const resetButton = document.getElementById('reset-button');
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
 
     let board = Array(9).fill('');
     let currentPlayer = 'X'; // Player X starts
     let gameOver = false;
+
+    themeToggle.addEventListener('click', () => {
+        // Toggle the 'dark-mode' class on the body
+        body.classList.toggle('dark-mode');
+
+        // Toggle the theme of the button and message text color
+        if (body.classList.contains('dark-mode')) {
+            themeToggle.title = 'Switch to Light Mode';
+            themeToggle.setAttribute('aria-label', 'Switch to Light Mode');
+            themeToggle.style.backgroundColor = '#000000'; // Dark mode button background color
+            themeToggle.style.color = '#ffffff'; // Dark mode button text color
+            message.style.color = '#ffffff'; // Dark mode message text color
+        } else {
+            themeToggle.title = 'Switch to Dark Mode';
+            themeToggle.setAttribute('aria-label', 'Switch to Dark Mode');
+            themeToggle.style.backgroundColor = '#ffffff'; // Light mode button background color
+            themeToggle.style.color = '#000000'; // Light mode button text color
+            message.style.color = '#000000'; // Light mode message text color
+        }
+    });
 
     cells.forEach((cell, index) => {
         cell.addEventListener('click', () => {
