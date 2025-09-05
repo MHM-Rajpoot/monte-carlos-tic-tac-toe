@@ -2,7 +2,7 @@
 
 A simple implementation of the classic Tic Tac Toe game with a Monte Carlo simulation-based AI opponent.
 
-**Live Demo:** [Play the game here](https://mhm-rajpoot.github.io/monte-carlos-tic-tac-toe/)
+**Live Demo:** [Play the Game Here](https://mhm-rajpoot.github.io/monte-carlos-tic-tac-toe/)
 
 ## Game Description
 
