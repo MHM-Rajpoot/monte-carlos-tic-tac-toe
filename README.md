@@ -2,6 +2,8 @@
 
 A simple implementation of the classic Tic Tac Toe game with a Monte Carlo simulation-based AI opponent.
 
+**Live Demo:** [Play the game here](https://mhm-rajpoot.github.io/monte-carlos-tic-tac-toe/)
+
 ## Game Description
 
 This game allows a human player to play against an AI opponent, "Carlos", which uses a Monte Carlo simulation to determine its moves. The game features a simple GUI with a 3x3 grid, where the player can click on empty cells to make their moves. The game also includes a theme toggle button to switch between light and dark modes.
