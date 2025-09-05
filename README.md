@@ -33,9 +33,9 @@ $$
 
 Where:
 
-- \( W_i \) = number of simulations where the AI opponent wins after making move \( i \)  
-- \( D_i \) = number of simulations where the game ends in a draw after making move \( i \)  
-- \( N \) = total number of simulations  
+- $\( W_i \)$ = number of simulations where the AI opponent wins after making move $\( i \)$  
+- $\( D_i \)$ = number of simulations where the game ends in a draw after making move $\( i \)$  
+- $\( N \)$ = total number of simulations  
 
 The best move \( i^* \) is then chosen as:
 
