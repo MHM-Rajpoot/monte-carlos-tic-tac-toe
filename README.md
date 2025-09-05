@@ -27,20 +27,21 @@ The Monte Carlo simulation is a method used to estimate the best move for the AI
 
 The score for a move \( i \) is computed as:
 
-\[
+$$
 S_i = \frac{W_i + 0.5 \cdot D_i}{N}
-\]
+$$
 
-Where:  
-* \( W_i \) = number of simulations where the AI opponent wins after making move \( i \)  
-* \( D_i \) = number of simulations where the game ends in a draw after making move \( i \)  
-* \( N \) = total number of simulations  
+Where:
 
-The best move \( i^* \) is then chosen as:  
+- \( W_i \) = number of simulations where the AI opponent wins after making move \( i \)  
+- \( D_i \) = number of simulations where the game ends in a draw after making move \( i \)  
+- \( N \) = total number of simulations  
 
-\[
+The best move \( i^* \) is then chosen as:
+
+$$
 i^* = \underset{i}{\mathrm{argmax}} \; S_i
-\]
+$$
 
 ## Code Structure
 
